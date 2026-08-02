@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/ on the Bevel storefront host
+host: https://getbevel.com
+note: >-
+  The Bevel storefront runs on Shopify. The openid-configuration and
+  oauth-authorization-server documents are Shopify's platform-provided Customer
+  Account OAuth/OIDC discovery for storefront shoppers (issuer
+  shopify.com/authentication/86655762737) — not a WalkerCo-published developer
+  API. The security.txt is WalkerCo's own and points to the Procter & Gamble
+  Vulnerability Disclosure Program.
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: walkerco-security.txt
+- path: /.well-known/openid-configuration
+  status: 200
+  file: walkerco-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: walkerco-oauth-authorization-server.json
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
