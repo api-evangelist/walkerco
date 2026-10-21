@@ -15,6 +15,12 @@ checked:
 - https://www.antler.co/portfolio
 - https://www.techstars.com/portfolio
 - https://www.ycombinator.com/companies
+- https://a16z.com/portfolio/
+- https://www.battery.com/company/
+- https://www.battery.com/wp-admin/admin-ajax.php
+- https://www.indexventures.com/companies/
+- https://www.sequoiacap.com/our-companies/
+- https://www.sequoiacap.com/sitemap.xml
 summary: null
 marketplace_apps: []
 edges:
@@ -44,5 +50,34 @@ edges:
     detected: '2026-10-21'
     year: '2013'
   detected_by: sweep-accelerator-portfolios.py
+  first_seen: '2026-10-21'
+- partner_name: Andreessen Horowitz (a16z)
+  partner: a16z
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://a16z.com/companies/walker-co/
+  category: vc portfolio participation
+  contract_reference:
+    register: a16z portfolio (a16z.com/portfolio/, the page's own data-companies JSON)
+    standard: null
+    spec_file: null
+    role: vc-portfolio-company
+    registered_name: Walker & Company Brands
+    register_id: https://a16z.com/companies/walker-co/
+    register_country: null
+    register_website: https://walkerandcompany.com/
+    matched_domain: walkerandcompany.com
+    matched_by: domain+name-among-holders
+    signal_note: 'participation only: the venture firm''s own published portfolio lists the company (investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-vc-portfolios.py
+    detected: '2026-10-21'
+    year: '2013'
+    status: Exits
+    sector: Consumer;Seed
+  detected_by: sweep-vc-portfolios.py
   first_seen: '2026-10-21'
 templates: []
